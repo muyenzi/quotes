@@ -8,11 +8,19 @@ import { Proverb } from '../proverb';
 })
 export class ProverbComponent implements OnInit {
   proverbs:Proverb[] =[
-    {nom:'Dont cry because it is over, smile because it happened.',auteur:'Dr Seus',soumission:'Esther'},
-    {nom:'Be yourself; everyone else is already taken.',auteur:'Dr wilde',soumission:'Ella'},
-    {nom:'No one can make you feel inferior without your consent.',auteur:'Eleanor Roosevelt',soumission:'Rolly'}
+    new Proverb('Dont cry because it is over, smile because it happened.','Dr Seus','Esther'),
+    new Proverb ('Be yourself; everyone else is already taken.','Dr wilde','Ella'),
+    new Proverb('No one can make you feel inferior without your consent.','Eleanor Roosevelt','Rolly')
   ];
-
+  toggleInfo(index){
+    this.proverbs[index].ShowInfo=!this.proverbs[index].ShowInfo;
+  }
+ 
+  completeProverb(isComplete, index){
+    if(isComplete){
+      this.proverbs.splice(index,1);
+    }
+  }
   constructor() { }
 
   ngOnInit() {

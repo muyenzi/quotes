@@ -1,11 +1,10 @@
-<p>proverb works!</p>
-<div style="text-align:center">
-    
+<p *ngFor='let proverb of proverbs;let i=index'>
+       <li>{{proverb.nom}}</li> 
        
-         <p *ngFor='let proverb of proverbs'>
-           {{proverb.nom}}</p> 
-           <app-proverb-info [proverb]='proverb'></app-proverb-info>
-        </div>
-        <div >
-           
-        </div>
+      <button (click)='toggleInfo(i)'>Details</button> 
+      <app-proverb-info *ngIf='proverb.ShowInfo' [proverbd]='proverb' (isComplete)='completeProverb($event,i)'></app-proverb-info>
+</p>
+
+<div>
+        
+   

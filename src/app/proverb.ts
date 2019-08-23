@@ -1,5 +1,6 @@
 export class Proverb {
-    nom:string;
-    auteur:string;
-    soumission:string;
+    ShowInfo :boolean;
+    constructor(public nom:string,public auteur:string,public soumission:string){
+        this.ShowInfo=false;
+    }
 }
