@@ -15,8 +15,10 @@ export class DaysCountPipe implements PipeTransform {
 
     if (dateCounter >= 1 && value > todayWithNoTime){
       return dateCounter;
-    }else{
-      return 0;
+    }
+    else
+    {
+      return 9 ;
     }
   }
 }
