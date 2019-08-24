@@ -2,7 +2,7 @@
        <li>{{proverb.nom}}</li> 
        
       <button (click)='toggleInfo(i)'>Details</button> 
-      <app-proverb-info *ngIf='proverb.ShowInfo' [proverbd]='proverb' (isComplete)='completeProverb($event,i)'></app-proverb-info>
+      <app-proverb-info *ngIf='proverb.ShowAuteur' [proverbd]='proverb' (isComplete) = 'deleteProverb($event,i)'></app-proverb-info>
 </p>
 
 <div>

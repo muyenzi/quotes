@@ -8,10 +8,10 @@ import { Proverb } from '../proverb';
 export class ProverbInfoComponent implements OnInit {
  
   @Input() proverbd: Proverb;
-  @Output() IsComplete =new EventEmitter<boolean>();
+  @Output() isComplete =new EventEmitter<boolean>();
   
-  proverbComplete(complete:boolean){
-    this.IsComplete .emit(complete);
+  proverbDelete(complete:boolean){
+    this.isComplete.emit(complete);
   }
  
   constructor() { }
