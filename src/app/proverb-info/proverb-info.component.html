@@ -1,7 +1,5 @@
-<!-- <p>wrrrrrrr</p> -->
-<p>
-    Author : {{proverbd.auteur}}  Publisher : {{proverbd.soumission}} </p>
-    <p><br> {{proverbd.fullDate|daysCount}} </p>
-   
-   <button (click)='proverbDelete(true)'>Delete</button>
+
+<p>Author : {{proverbd.auteur}}  Publisher : {{proverbd.soumission}} </p>
+<p>{{proverbd.fullDate|daysCount}} </p>
+<button (click)='proverbDelete(true)' class="btn btn-outline-danger">Delete</button>
    
