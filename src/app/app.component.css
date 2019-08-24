@@ -1,7 +1,12 @@
 /* * {
-    height: 900px;
-    width: 100%;
-    background-size: cover;
+   
     background-image: url("https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
     background-repeat: no-repeat;
 } */
+
+.all {
+background-image: url("http://getwallpapers.com/wallpaper/full/8/5/3/829555-vertical-cool-wallpapers-with-quotes-1920x1227-for-samsung.jpg");
+height: 1000px;
+background-size: cover;
+
+} 
