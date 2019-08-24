@@ -16,7 +16,7 @@ export class ProverbComponent implements OnInit {
     this.proverbs[index].ShowAuteur=!this.proverbs[index].ShowAuteur;
   }
  
-  deleteGoal(isComplete, index){
+  proverbDelete(isComplete, index){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.proverbs[index].nom}?`);
 

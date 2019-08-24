@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProverbComponent } from './proverb/proverb.component';
 import { ProverbInfoComponent } from './proverb-info/proverb-info.component';
+import { DaysCountPipe } from './days-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProverbComponent,
-    ProverbInfoComponent
+    ProverbInfoComponent,
+    DaysCountPipe
   ],
   imports: [
     BrowserModule,
