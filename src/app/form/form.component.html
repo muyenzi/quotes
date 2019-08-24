@@ -1,29 +1,42 @@
 <div class="container-fluid">
-    <h2 class="text-center">Post a new Quote</h2>
+    <h2 class="text-center">Post Quote</h2>
     <hr>
-    <form>
+    <form #Form='ngForm'>
         <div class="form-group">
   
-            <label for="name">Quote</label>
-            <input type="text" required class="form-control" id="name">
-  
+            <label for="nom">Quote</label>
+            <input type="text" required class="form-control" id="nom" [(ngModel)]="newProverb.nom" name="nom" #nom='ngModel' required>
+                 
+            <div [hidden]="nom.valid || nom.pristine" class="alert alert-danger">
+                <p>quote is required</p>
+              </div>
+          
         </div>
         <div class="form-group">
   
-            <label for="description">Author</label>
-            <textarea class="form-control" id="description" rows="4" required></textarea>
-  
+            <label for="auteur">Author</label>
+          
+            <textarea class="form-control" id="auteur" rows="4" [(ngModel)]="newProverb.auteur" name="auteur" #auteur="ngModel" required></textarea>
+            <div [hidden]="auteur.valid || auteur.pristine" class="alert alert-danger">
+            <p>Author is required</p>
+         </div>
         </div>
         <div class="form-group">
   
-            <label for="description">Publisher</label>
-            <textarea class="form-control" id="description" rows="4" required></textarea>
-  
+            <label for="soumission">Publisher</label>
+            <textarea class="form-control" id="soumission" rows="4" [(ngModel)]="newProverb.soumission" name="soumission" #soumission="ngModel" required></textarea>
+            <div [hidden]="soumission.valid || soumission.pristine" class="alert alert-danger">
+            <p>Publisher is required</p>
+        </div>
         </div>
         <div class="form-group">
-            <label for="complete">Completion</label>
-            <input type='date' id="complete" required>
-  
+
+            <label for="fullDate">Date</label>
+            <input type='date' id="fullDate" [(ngModel)]="newProverb.FullDate" name="fullDate" #fullDate="ngModel" required>
+            <div [hidden]="fullDate.valid || fullDate.pristine" class="alert alert-danger">
+              <p>Date is required</p>
+            </div>
         </div>
+        <button type="submit" class="btn btn-success">Post</button>
     </form>
   </div>
