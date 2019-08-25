@@ -7,6 +7,7 @@ import { ProverbComponent } from './proverb/proverb.component';
 import { ProverbInfoComponent } from './proverb-info/proverb-info.component';
 import { DaysCountPipe } from './days-count.pipe';
 import { FormComponent } from './form/form.component';
+import { LikesComponent } from './likes/likes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormComponent } from './form/form.component';
     ProverbComponent,
     ProverbInfoComponent,
     DaysCountPipe,
-    FormComponent
+    FormComponent,
+    LikesComponent
   ],
   imports: [
     BrowserModule,
