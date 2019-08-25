@@ -32,7 +32,7 @@
         <div class="form-group">
 
             <label for="fullDate">Date</label>
-            <input type='date' id="fullDate" [(ngModel)]="newProverb.FullDate" name="fullDate" #fullDate="ngModel" required>
+            <input type='date' id="fullDate" [(ngModel)]="newProverb.fullDate" name="fullDate" #fullDate="ngModel" required>
             <div [hidden]="fullDate.valid || fullDate.pristine" class="alert alert-danger">
               <p>Date is required</p>
             </div>

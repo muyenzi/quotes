@@ -38,7 +38,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    The quote will be displayed on the screen .
  
  ## Github Link 
-
+https://muyenzi.github.io/quotes/
 
  ## SUPPORT AND CONTACT
  contact me : muyenziraissa@gmail.com
