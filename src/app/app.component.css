@@ -6,7 +6,15 @@
 
 .all {
 background-image: url("https://www.elsetge.cat/myimg/f/37-371024_never-give-up-never-give-up-inspirational-quote.jpg");
-height: 1000px;
+height: 950px;
 background-size: cover;
 
 } 
+
+.footer {
+    text-align: center;
+    color:white;
+    top:0;
+    background-color: black;
+    height: 10%;
+  }
