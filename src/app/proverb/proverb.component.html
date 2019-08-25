@@ -4,10 +4,10 @@
   <div class="col-md-6">
       <br><br><br><p *ngFor='let proverb of proverbs;let i=index'>
   <li>{{proverb.nom}}</li> 
- <button (click)='toggleInfo(i)' class="btn btn-info">Details</button> 
- 
+ <button (click)='toggleInfo(i)' class="btn btn-dark">Details</button> <br>
+ <app-likes></app-likes>
  <app-proverb-info *ngIf='proverb.ShowAuteur' [proverbd]='proverb' (isComplete) = 'proverbDelete($event,i)'></app-proverb-info> </p>
- 
+
 </div>
 <div class="col-md-6">
 <app-form (addProverb)="addNewProverb($event)"></app-form>
