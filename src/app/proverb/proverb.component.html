@@ -6,6 +6,7 @@
   <li>{{proverb.nom}}</li> 
  <button (click)='toggleInfo(i)' class="btn btn-info">Details</button> 
  <app-proverb-info *ngIf='proverb.ShowAuteur' [proverbd]='proverb' (isComplete) = 'proverbDelete($event,i)'></app-proverb-info></p>
+ <app-likes></app-likes>
 </div>
 <div class="col-md-6">
 <app-form (addProverb)="addNewProverb($event)"></app-form>
